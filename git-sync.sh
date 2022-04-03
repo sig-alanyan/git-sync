@@ -53,7 +53,7 @@ git config --global user.name "sig-alanyan"
 
 # git checkout -b ${SOURCE_BRANCH} source/${SOURCE_BRANCH}
 git pull destination "${DESTINATION_BRANCH}" --rebase
-#echo 'perform here 1'
+echo 'perform here 1'
 git push ${SOURCE_BRANCH}
 echo 'perform here 2'
 git push destination "${SOURCE_BRANCH}:${DESTINATION_BRANCH}" -f
