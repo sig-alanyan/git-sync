@@ -51,7 +51,8 @@ fi
 git config --global user.email "alanyan@synopsys.com"
 git config --global user.name "sig-alanyan"
 
+git checkout ${SOURCE_BRANCH} source/${SOURCE_BRANCH}
 git pull destination "${DESTINATION_BRANCH}" --rebase
-git push --origin
+git push source ${SOURCE_BRANCH}
 #git push destination "${SOURCE_BRANCH}:${DESTINATION_BRANCH}" -f
 git push destination "${SOURCE_BRANCH}:${DESTINATION_BRANCH}"
