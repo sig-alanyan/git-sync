@@ -53,7 +53,8 @@ git config --global user.name "sig-alanyan"
 
 # git checkout -b ${SOURCE_BRANCH} source/${SOURCE_BRANCH}
 git pull destination "${DESTINATION_BRANCH}" --rebase
-git push 
+echo "test test test 111122223333"
+git push -f
 echo "test test test"
 git push -f
 #git push destination "${SOURCE_BRANCH}:${DESTINATION_BRANCH}"
