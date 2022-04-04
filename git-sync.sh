@@ -53,6 +53,6 @@ git config --global user.name "sig-alanyan"
 
 # git checkout -b ${SOURCE_BRANCH} source/${SOURCE_BRANCH}
 git pull destination "${DESTINATION_BRANCH}" --rebase
-git push ${SOURCE_BRANCH}
+git push
 #git push destination "${SOURCE_BRANCH}:${DESTINATION_BRANCH}"
 git push destination "${SOURCE_BRANCH}:${DESTINATION_BRANCH}"
